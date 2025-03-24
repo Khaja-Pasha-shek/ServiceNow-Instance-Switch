@@ -1,0 +1,11 @@
+chrome.storage.sync.get(null, console.log); // Check stored data
+chrome.storage.sync.clear(console.log);
+chrome.tabs.query({ active: true, currentWindow: true }, console.log);
+chrome.runtime.sendMessage({ action: "test" });
+chrome.commands.getAll(console.log);
+
+
+
+
+//Keyboard shortcut command
+chrome.runtime.sendMessage({ command: "open-dev-1" });

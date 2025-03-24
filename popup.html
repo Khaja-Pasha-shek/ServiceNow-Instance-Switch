@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ServiceNow Switcher</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <h3>ServiceNow Instance Switcher</h3>
+    <div class="input-container">
+        <input type="text" id="instanceName" placeholder="Instance Name">
+        <input type="text" id="instanceUrl" placeholder="Instance URL">
+        <select id="instanceType">
+            <option value="Dev">Dev</option>
+            <option value="Test">Test</option>
+            <option value="Prod">Prod</option>
+        </select>
+        <button id="addInstance">Add</button>
+    </div>
+    <div class="dropdown-container">
+        <select id="typeDropdown">
+            <option value="">Select Type</option>
+        </select>
+        <div class="instance-dropdown-container">
+            <select id="instanceDropdown">
+                <option value="">Select Instance</option>
+            </select>
+            <button id="editInstance" disabled>
+                <img src="edit-icon.svg" alt="Edit">
+            </button>
+        </div>
+        <button id="goButton">Go</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

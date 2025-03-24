@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "ServiceNow Switch Instance",
+  "version": "1.0",
+  "description": "Quickly switch between ServiceNow instances.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+S"
+      },
+      "description": "Open the Instance Switcher"
+    },
+    "open-dev-1": {
+      "suggested_key": {
+        "default": "Alt+1"
+      },
+      "description": "Open Dev Instance"
+    },
+    "open_test_instance": {
+      "suggested_key": {
+        "default": "Alt+2"
+      },
+      "description": "Open Test Instance"
+    },
+    "open_prod_instance": {
+      "suggested_key": {
+        "default": "Alt+3"
+      },
+      "description": "Open Production Instance"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
